@@ -1,0 +1,360 @@
+[2026-03-30 22:48:28] Production.INFO: Activation code not found from init  
+[2026-03-30 22:48:29] Production.INFO: Activation code not found from init  
+[2026-03-30 22:48:42] Production.INFO: Activation code not found from init  
+[2026-03-30 22:48:44] Production.INFO: Activation code not found from init  
+[2026-03-30 22:48:49] Production.INFO: Activation code not found from init  
+[2026-03-30 22:48:49] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:02] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:12] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:22] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:32] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:42] Production.INFO: Activation code not found from init  
+[2026-03-30 22:49:52] Production.INFO: Activation code not found from init  
+[2026-03-30 22:50:06] Production.INFO: Activation code not found from init  
+[2026-03-30 22:50:23] Production.INFO: Activation code not found from init  
+[2026-03-30 22:50:50] Production.INFO: Activation code not found from init  
+[2026-03-30 22:51:31] Production.INFO: Activation code not found from init  
+[2026-03-30 22:51:48] Production.INFO: Activation code not found from init  
+[2026-03-30 22:51:58] Production.INFO: Activation code not found from init  
+[2026-03-30 22:52:11] Production.INFO: Activation code not found from init  
+[2026-03-30 22:52:22] Production.INFO: Activation code not found from init  
+[2026-03-30 22:52:40] Production.INFO: Activation code not found from init  
+[2026-03-30 22:53:25] Production.INFO: Activation code not found from init  
+[2026-03-30 22:53:40] Production.INFO: Activation code not found from init  
+[2026-03-30 22:56:37] Production.INFO: Activation code not found from init  
+[2026-03-30 22:56:47] Production.INFO: Activation code not found from init  
+[2026-03-30 22:57:14] Production.INFO: Activation code not found from init  
+[2026-03-30 22:57:25] Production.INFO: Activation code not found from init  
+[2026-03-30 22:57:59] Production.INFO: Activation code not found from init  
+[2026-03-30 22:58:33] Production.INFO: Activation code not found from init  
+[2026-03-30 22:59:43] Production.INFO: Activation code not found from init  
+[2026-03-30 23:00:11] Production.INFO: Activation code not found from init  
+[2026-03-30 23:02:51] Production.INFO: Activation code not found from init  
+[2026-03-30 23:03:01] Production.INFO: Activation code not found from init  
+[2026-03-30 23:03:11] Production.INFO: Activation code not found from init  
+[2026-03-30 23:03:21] Production.INFO: Activation code not found from init  
+[2026-03-30 23:03:34] Production.INFO: Activation code not found from init  
+[2026-03-30 23:03:47] Production.INFO: Activation code not found from init  
+[2026-03-30 23:04:05] Production.INFO: Activation code not found from init  
+[2026-03-30 23:04:36] Production.INFO: Activation code not found from init  
+[2026-03-30 23:04:48] Production.INFO: Activation code not found from init  
+[2026-03-30 23:04:58] Production.INFO: Activation code not found from init  
+[2026-03-30 23:05:10] Production.INFO: Activation code not found from init  
+[2026-03-30 23:05:24] Production.INFO: Activation code not found from init  
+[2026-03-30 23:05:44] Production.INFO: Activation code not found from init  
+[2026-03-30 23:06:26] Production.INFO: Activation code not found from init  
+[2026-03-30 23:07:03] Production.INFO: Activation code not found from init  
+[2026-03-30 23:08:14] Production.INFO: Activation code not found from init  
+[2026-03-30 19:27:01] Production.INFO: ErrorException: Attempt to read property "name" on null in /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/Jitsi/Database/Migrations/2021_03_29_070403_create_jitsi_settings_table.php:61
+Stack trace:
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/Jitsi/Database/Migrations/2021_03_29_070403_create_jitsi_settings_table.php(61): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateJitsiSettingsTable->up()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\Database\Migrations\Migrator->runMethod()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->runMigration()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\Console\View\Components\Task->render()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->write()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\Database\Migrations\Migrator->runUp()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\Database\Migrations\Migrator->runPending()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\Database\Migrations\Migrator->run()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\Database\Console\Migrations\MigrateCommand->Illuminate\Database\Console\Migrations\{closure}()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\Database\Migrations\Migrator->usingConnection()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\Database\Console\Migrations\MigrateCommand->runMigrations()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\BoundMethod::call()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\Container\Container->call()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\Console\Command->execute()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\Component\Console\Command\Command->run()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\Console\Command->run()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\Component\Console\Application->doRunCommand()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\Component\Console\Application->doRun()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\Component\Console\Application->run()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\Foundation\Console\Kernel->handle()
+#28 {main}  
+[2026-03-30 19:27:01] Production.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:568)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(568): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#33 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#34 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#35 {main}
+"} 
+[2026-03-30 19:53:19] Production.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:568)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(568): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#33 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#34 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#35 {main}
+"} 
+[2026-03-30 20:52:16] Production.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists (Connection: mysql, SQL: create table `agents` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `designation` varchar(191) not null, `avatar` varchar(191) null, `number` varchar(191) not null, `status` tinyint(1) not null default '1', `always_available` tinyint(1) not null default '0', `created_at` timestamp null, `updated_at` timestamp null, `school_id` int unsigned null default '1') default character set utf8mb4 collate 'utf8mb4_unicode_ci') at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'agents' already exists at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:568)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(568): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\\Database\\Connection->statement()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(621): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): Illuminate\\Database\\Schema\\Builder->build()
+#7 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create()
+#8 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): CreateAgentsTable->up()
+#10 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#11 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#13 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render()
+#15 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write()
+#16 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#17 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#18 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run()
+#19 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#21 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#27 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#28 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#29 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#30 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#31 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#32 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#33 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#34 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#35 {main}
+"} 
+[2026-03-30 21:04:33] Production.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1879, 1, 1, 2026-03-30 21:04:33, 2026-03-30 21:04:33)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1879, 1, 1, 2026-03-30 21:04:33, 2026-03-30 21:04:33)) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#4 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(53): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#6 {main}
+"} 
+[2026-03-30 21:05:14] Production.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1880, 1, 1, 2026-03-30 21:05:14, 2026-03-30 21:05:14)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1880, 1, 1, 2026-03-30 21:05:14, 2026-03-30 21:05:14)) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#4 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(53): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#6 {main}
+"} 
+[2026-03-30 21:05:22] Production.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1881, 1, 1, 2026-03-30 21:05:22, 2026-03-30 21:05:22)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) (Connection: mysql, SQL: insert into `sm_role_permissions` (`role_id`, `module_link_id`, `school_id`, `active_status`, `created_at`, `updated_at`) values (1, 1881, 1, 1, 2026-03-30 21:05:22, 2026-03-30 21:05:22)) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#4 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u841409365_erpv0`.`sm_role_permissions`, CONSTRAINT `sm_role_permissions_module_link_id_foreign` FOREIGN KEY (`module_link_id`) REFERENCES `sm_module_links` (`id`) ON DELETE CASCADE) at /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53)
+[stacktrace]
+#0 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(53): PDOStatement->execute()
+#1 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}()
+#2 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate\\Database\\Connection->run()
+#4 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3730): Illuminate\\Database\\MySqlConnection->insert()
+#5 /home/u841409365/domains/test-technoprint.online/public_html/erpv2/third_attempt_fix.php(53): Illuminate\\Database\\Query\\Builder->insert()
+#6 {main}
+"} 
