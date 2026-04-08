@@ -30,3 +30,4 @@ storage/framework/cache/data/*
 storage/framework/sessions/*
 bootstrap/cache/*.php
 vendor/spondonit/service/helpers/helper.php.backup
+database/seeders/z_old/
