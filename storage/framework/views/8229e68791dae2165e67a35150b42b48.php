@@ -1,0 +1,1 @@
+<?php echo @$body; ?><?php /**PATH /home/u841409365/domains/test-technoprint.online/public_html/erpv2/resources/views/backEnd/email/emailBody.blade.php ENDPATH**/ ?>
