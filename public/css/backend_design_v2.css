@@ -1335,13 +1335,14 @@ button.note-btn.btn.btn-default.btn-sm.dropdown-toggle::after {
 }
 
 button.note-btn.dropdown-toggle::after {
-    display: none;
+  display: none;
 }
 
 .note-editor ul li {
-    list-style: disc;
+  list-style: disc;
 }
 
 .note-editor ol li {
-    list-style: number;
+  list-style: number;
 }
+

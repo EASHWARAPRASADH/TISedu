@@ -36,6 +36,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(): void
     {
+        $this->mapSuperAdminRoutes();
         $this->mapApiRoutes();
         $this->mapV2ApiRoutes();
         $this->mapWebRoutes();
@@ -88,6 +89,18 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware(['web', 'auth', '2fa'])
             ->namespace($this->namespace)
             ->group(base_path('routes/graduate.php'));
+    }
+
+    /**
+     * Define the "superadmin" routes for the application.
+     *
+     * SuperAdmin routes use their own middleware stack with the
+     * 'superadmin' guard for isolated authentication.
+     */
+    protected function mapSuperAdminRoutes()
+    {
+        Route::middleware('web')
+            ->group(base_path('routes/superadmin.php'));
     }
 
     protected function mapPageBuilderRoutes()

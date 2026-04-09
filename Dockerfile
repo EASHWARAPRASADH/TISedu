@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
-    nginx \
     libfreetype6-dev \
     libjpeg62-turbo-dev \
     libwebp-dev \
@@ -19,8 +18,16 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Install ionCube Loader
+RUN curl -o ioncube.tar.gz https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
+    && tar -xvzf ioncube.tar.gz \
+    && mv ioncube/ioncube_loader_lin_8.2.so $(php -r "echo ini_get('extension_dir');")/ioncube_loader_lin_8.2.so \
+    && rm -rf ioncube.tar.gz ioncube \
+    && echo "zend_extension=ioncube_loader_lin_8.2.so" > /usr/local/etc/php/conf.d/00-ioncube.ini
+
 # Install PHP extensions
-RUN docker-php-ext-install \
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
+    && docker-php-ext-install \
     pdo_mysql \
     mbstring \
     exif \
@@ -30,8 +37,8 @@ RUN docker-php-ext-install \
     zip \
     xml \
     ctype \
-    json \
-    tokenizer
+    intl \
+    mysqli
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -39,25 +46,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www
 
-# Copy application files
-COPY . /var/www
-
-# Set permissions
-RUN chown -R www-data:www-data /var/www \
-    && chmod -R 755 /var/www \
-    && chmod -R 775 /var/www/storage \
-    && chmod -R 775 /var/www/bootstrap/cache
-
-# Copy nginx config
-COPY docker/nginx.conf /etc/nginx/sites-available/default
-RUN ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-
 # Copy entrypoint script
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-# Expose port
-EXPOSE 80
+# Expose port (PHP-FPM default)
+EXPOSE 9000
 
-# Start services
 ENTRYPOINT ["entrypoint.sh"]

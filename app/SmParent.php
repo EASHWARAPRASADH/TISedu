@@ -71,4 +71,9 @@ class SmParent extends Model
         parent::boot();
         static::addGlobalScope(new SchoolScope);
     }
+
+    public function school() 
+    {
+        return $this->belongsTo('App\SmSchool', 'school_id');
+    }
 }

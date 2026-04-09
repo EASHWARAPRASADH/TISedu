@@ -3403,29 +3403,25 @@ if (! function_exists('SaasSchool')) {
             $domain = null;
         }
 
-        $saas_module = 'Modules/Saas/Providers/SaasServiceProvider.php';
-        if (file_exists($saas_module)) {
-            $module_status = json_decode(file_get_contents('modules_statuses.json'), true);
-            if (isset($module_status['Saas']) && $module_status['Saas']) {
-
-                if ($domain) {
-                    $school = SmSchool::where(['domain' => $domain, 'active_status' => 1])->firstOrFail();
-                    $request->route()->forgetParameter('subdomain');
-                } elseif ($host == $short_url) {
-                    $school = SmSchool::where('id', 1)->first(); // \App\SmSchool::findOrFail(1);
-                } elseif ($host !== $short_url && config('app.allow_custom_domain')) {
-                    $school = SmSchool::where('custom_domain', $host)->where('active_status', 1)->first(); // \App\SmSchool::where(['custom_domain' => $host, 'active_status' => 1])->firstOrFail();
-                } elseif (Auth::check()) {
-                    $school = SmSchool::where('id', Auth::user()->school_id)->first();
-                    SmSchool::findOrFail(Auth::user()->school_id);
-                } else {
-                    $school = SmSchool::where(['domain' => $domain, 'active_status' => 1])->firstOrFail();
-                    $request->route()->forgetParameter('subdomain');
-                }
+        // Modified by SuperAdmin Integration
+        // Always execute SaaS multi-tenant domain routing logic globally.
+        if ($domain) {
+            $school = SmSchool::where(['domain' => $domain, 'active_status' => 1])->first();
+            if ($school) {
+                $request->route()->forgetParameter('subdomain');
             }
+        } elseif ($host == $short_url) {
+            $school = SmSchool::where('id', 1)->first();
+        } elseif ($host !== $short_url) {
+            // Also check for wildcard custom domains if supported
+            $school = SmSchool::where('custom_domain', $host)->where('active_status', 1)->first();
+        } 
+        
+        if (!$school && Auth::check()) {
+            $school = SmSchool::where('id', Auth::user()->school_id)->first();
         }
 
-        if (! $school) {
+        if (!$school) {
             $school = Auth::check() ? auth()->user()->school : SmSchool::where('id', 1)->first();
         }
 

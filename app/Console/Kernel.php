@@ -21,6 +21,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         Commands\DemoCron::class,
         QrcodeAttendnceAbsenseCommand::class,
+        \App\Console\Commands\CheckSaaSSubscriptions::class,
     ];
 
     protected $PurchaseVerificationMiddleware = [
@@ -68,6 +69,8 @@ class Kernel extends ConsoleKernel
                 $schedule->command('qrcode:attendance')->everyOddHour()->withoutOverlapping();
             }
 
+            // Run SaaS subscription expiration check daily
+            $schedule->command('saas:check-subscriptions')->daily();
         }
     }
 

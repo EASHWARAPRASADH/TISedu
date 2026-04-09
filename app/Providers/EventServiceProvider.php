@@ -54,5 +54,48 @@ class EventServiceProvider extends ServiceProvider
             [ListenStudentPromotionGroupDisable::class, 'handle']
         );
 
+        // ============================================
+        // SuperAdmin Events
+        // ============================================
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminLoggedIn::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleLogin']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminLoggedOut::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleLogout']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminUserCreated::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleUserCreated']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminUserUpdated::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleUserUpdated']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminUserDeleted::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleUserDeleted']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SuperAdminUserStatusChanged::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleUserStatusChanged']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SchoolCreatedBySuperAdmin::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleSchoolCreated']
+        );
+
+        Event::listen(
+            \App\Events\SuperAdmin\SchoolDeletedBySuperAdmin::class,
+            [\App\Listeners\SuperAdmin\LogSuperAdminActivity::class, 'handleSchoolDeleted']
+        );
+
     }
 }

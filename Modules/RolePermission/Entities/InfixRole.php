@@ -14,5 +14,10 @@ class InfixRole extends Model
     public function assignedPermission()
     {
         return $this->hasMany(AssignPermission::class, 'role_id', 'id')->where('school_id', auth()->user()->school_id);
-    }  
+    }
+
+    public function saasAssignments()
+    {
+        return $this->hasMany(AssignPermission::class, 'role_id', 'id');
+    }
 }

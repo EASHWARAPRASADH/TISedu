@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f
+spawn ssh-copy-id -p 65002 -i /Users/eash/.ssh/id_ed25519.pub u841409365@193.202.45.164
+expect {
+    "Are you sure you want to continue connecting" {
+        send "yes\r"
+        exp_continue
+    }
+    "password:" {
+        send "Eash@2005\r"
+    }
+}
+expect eof

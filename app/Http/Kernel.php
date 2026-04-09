@@ -91,6 +91,8 @@ class Kernel extends HttpKernel
         '2fa' => Middleware\TwoFactorMiddleware::class,
         'fees_due_check' => Middleware\FeesDueCheckMiddleware::class,
         'ThemeCheckMiddleware' => ThemeCheckMiddleware::class,
+        'superadmin' => Middleware\SuperAdminMiddleware::class,
+        'SuperAdmin' => Middleware\SuperAdminMiddleware::class,
 
     ];
 }

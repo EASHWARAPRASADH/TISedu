@@ -117,4 +117,9 @@ class SmStaff extends Model
         parent::boot();
         static::addGlobalScope(new ActiveStatusSchoolScope);
     }
+
+    public function school() 
+    {
+        return $this->belongsTo('App\SmSchool', 'school_id');
+    }
 }

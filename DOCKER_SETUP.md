@@ -1,89 +1,70 @@
-# Docker Setup for TISedu ERP
+# 🚀 TISedu ERP Docker Quick-Start (Windows)
 
-## Quick Start
+This is the recommended "Error-Free" way to run the ERP on your local Windows machine. It automatically handles ionCube, PHP extensions, and license bypass.
 
-### Prerequisites
-- Docker Desktop installed
-- Docker Compose installed
+## 📋 Prerequisites
 
-### 1. Clone and Navigate
-```bash
-git clone https://github.com/EASHWARAPRASADH/TISedu.git
-cd TISedu
-```
+1.  **Docker Desktop**: Installed and running.
+2.  **WSL2 Backend**: Recommended for best performance.
 
-### 2. Start Docker Containers
-```bash
+---
+
+## ⚡ One-Click Start (Recommended)
+
+1.  Open the project folder on your Windows computer.
+2.  Right-click `run-docker-windows.ps1` and select **Run with PowerShell**.
+3.  Wait for the process to complete.
+4.  The application will automatically open in your browser at `http://localhost:8888`.
+
+---
+
+## 🛠 Manual Start
+
+If you prefer using the terminal:
+```powershell
 docker-compose up -d --build
 ```
 
-This will start:
-- **App** (PHP 8.2 + Laravel) - Port 9000 (internal)
-- **Nginx** (Web Server) - Port 8080
-- **MySQL** (Database) - Port 3306
-- **phpMyAdmin** (DB Admin) - Port 8081
+---
 
-### 3. Access the Application
+## 🌐 Access URLs
 
 | Service | URL |
 |---------|-----|
-| ERP Application | http://localhost:8080 |
-| phpMyAdmin | http://localhost:8081 |
+| **ERP Application** | [http://localhost:8888](http://localhost:8888) |
+| **phpMyAdmin** | [http://localhost:8881](http://localhost:8881) |
 
-### 4. Default Login
-- **Email:** admin@infixedu.com
-- **Password:** 123456
+---
 
-## Useful Commands
+## 🔑 Default Credentials
 
-```bash
-# Stop containers
-docker-compose down
+- **Email:** `admin@infixedu.com`
+- **Password:** `123456`
 
-# View logs
-docker-compose logs -f
+---
 
-# Restart
-docker-compose restart
-
-# Rebuild after code changes
-docker-compose up -d --build
-
-# Access app container
-docker exec -it erpv2_app bash
-
-# Access MySQL
-docker exec -it erpv2_mysql mysql -u root -p
-```
-
-## Database
-
-The database is automatically imported from `local_infixedu_dump.sql` on first run.
-
-MySQL Credentials:
-- **Host:** mysql
-- **Database:** infixedu
-- **Username:** root
-- **Password:** root
-
-## Troubleshooting
+## ❓ Troubleshooting
 
 ### Port already in use
-If port 8080 or 3306 is in use, change them in `docker-compose.yml`:
+If port `8888` is in use, edit `docker-compose.yml` and change the line:
 ```yaml
 ports:
-  - "8080:80"  # Change to "8082:80" or any free port
+  - "8888:80"  # Change 8888 to another number like 9999
 ```
 
-### Permission issues
-```bash
-docker exec -it erpv2_app bash
-chown -R www-data:www-data /var/www/storage
-chmod -R 775 /var/www/storage
-```
+### Permission Issues
+The `run-docker-windows.ps1` script automatically attempts to fix common permission issues. If you still see errors, try running PowerShell as **Administrator**.
 
-### Reset everything
-```bash
-docker-compose down -v  # Removes volumes too
-docker-compose up -d --build
-```
+### Database didn't import
+On the first run, MySQL imports `local_infixedu_dump.sql`. If it fails:
+1. Run `docker-compose down -v` (This deletes volumes and data).
+2. Run `docker-compose up -d`.
+
+---
+
+## 📜 Included Features
+
+- **PHP 8.2-FPM**: Optimized with all required extensions.
+- **ionCube Loader**: Pre-installed and configured.
+- **Auto-License Bypass**: Flag files are automatically generated.
+- **Clean Nginx Service**: Running as a separate container for stability.
