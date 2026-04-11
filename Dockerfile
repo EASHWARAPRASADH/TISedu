@@ -15,11 +15,14 @@ RUN apt-get update && apt-get install -y \
     libwebp-dev \
     libxpm-dev \
     libgd-dev \
+    libicu-dev \
+    icu-devtools \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Install ionCube Loader
-RUN curl -o ioncube.tar.gz https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
+RUN curl --retry 3 --retry-delay 5 --ssl-no-revoke -o ioncube.tar.gz https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
+    || (curl -k -L -o ioncube.tar.gz https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz) \
     && tar -xvzf ioncube.tar.gz \
     && mv ioncube/ioncube_loader_lin_8.2.so $(php -r "echo ini_get('extension_dir');")/ioncube_loader_lin_8.2.so \
     && rm -rf ioncube.tar.gz ioncube \
